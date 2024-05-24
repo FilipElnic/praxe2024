@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @keyframes nevim {
+      from {
+        background-color: red;
+        height: 300px;
+        width: 300px;
+      }
+      to {
+        background-color: brown;
+        height: 800px;
+        width: 300px;
+      }
+    }
+
+    /* The element to apply the animation to */
+    .animate {
+      margin: auto;
+      animation-name: nevim;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      text-align: center;
+      color: white;
+    }
+
+    .tvojemama {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #f6dcac;
+      text-align: center;
+      height: 100px;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <h1>Moje pero kdyz tvoje mama</h1>
+    <div class="animate" id="animace">moje pero</div>
+    <div class="tvojemama" id="tvojemama">tvoje mama</div>
+  </body>
+</html>

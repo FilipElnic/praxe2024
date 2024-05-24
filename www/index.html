@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My first PHP page</h1>
+
+    <form>
+      <input type="text" name="name" id="name" /><label for="name">Name</label
+      ><br />
+      <input type="text" name="email" id="email" /><label for="email"
+        >Email</label
+      ><br />
+      <input type="number" name="phone" id="phone" /><label for="phone"
+        >Phone</label
+      ><br />
+      <input type="password" name="password" id="password" /><label
+        for="password"
+        >Password</label
+      ><br />
+      <button type="submit" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+      var Name = document.getElementById("name");
+      var Email = document.getElementById("email");
+      var Phone = document.getElementById("phone");
+      var number = document.getElementById("password");
+
+      function submitForm() {
+        console.log("Name: ", Name.value);
+        console.log("Email: ", Email.value);
+        console.log("Phone: ", Phone.value);
+        console.log("number: ", number.value);
+      }
+    </script>
+  </body>
+</html>
